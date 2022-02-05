@@ -142,8 +142,8 @@
 				<div ex:role="facet" 
 				ex:facetClass="Cloud"
 				ex:expression=".area-gestisce-introito" 
-				ex:facetLabel="area gestisce introito"
-				ex:sortAscending="true"
+				ex:facetLabel="area che gestisce l'introito"
+				ex:sortAscending="false"
 				ex:sortMode="count"></div>
 			</div>
 			<div class="col-md-3 column">
@@ -151,7 +151,7 @@
 				ex:expression=".numero-medio-pagamenti-mese" 
 				ex:facetLabel="numero medio pagamenti mese"
 				ex:missingLabel="Non specificato"
-				ex:sortAscending="true"
+				ex:sortAscending="false"
 				ex:sortMode="count"></div>
 			
 			</div>
@@ -160,7 +160,7 @@
 				ex:expression=".importo-massimo-pagamento" 
 				ex:facetLabel="importo massimo pagamento"
 				ex:missingLabel="altro"
-				ex:sortAscending="true"
+				ex:sortAscending="false"
 				ex:sortMode="count">
 				</div>
 			</div>
@@ -175,17 +175,17 @@
 					ex:viewClass="Exhibit.TabularView"  
 					ex:label="Table"  
 					ex:columns=".titolo-pagamento,.area-gestisce-introito,.ufficio-responsabile-introito,.scadenza-pagamento,.numero-medio-pagamenti-mese,.importo-minimo-pagamento,.importo-massimo-pagamento"  
-					ex:columnLabels="titolo-pagamento, area, ufficio, scadenza-pagamento, num. medio pagamenti mese, importo min. pagamento, importo max pagamento" 
+					ex:columnLabels="pagamento, area, ufficio, scadenza, num. medio pagam. mese, importo min. pagam., importo max pagam." 
 					ex:columnFormats="list,list,list,list,list,list,list"
 					ex:sortColumn="7"
-					ex:sortAscending="false"
+					ex:sortAscending="true"
 					ex:tableStyler="tableStyler"> 
 					<div ex:role="exhibit-lens">
 						<div class="table-responsive">
 							<table class="table">
 								<tr>
 									<!-- <td><strong><span ex:content=".area"></strong></td> -->
-									<td><strong><span ex:content=".titolo-pagamento" class="accussì"></strong></span></a></td>
+									<td><strong><span ex:content=".titolo-pagamento"></strong></span></td>
 									<td><span ex:content=".area-gestisce-introito"></td>
 									<td><span ex:content=".ufficio-responsabile-introito"></span></td>
 									<td><span ex:content=".scadenza-pagamento"></span></td>

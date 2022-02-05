@@ -1,13 +1,14 @@
 ![image](https://raw.githubusercontent.com/UO-TransizioneDigitaleComunePalermo/procedimenti-amministrativi-comunepalermo/gh-pages/img/comune-palermo-innovazione.png)
 
-# `Catalogo` delle attività relative ai procedimenti amministrativi del comune di Palermo
+# `Catalogo` dei pagamenti al comune di Palermo
 
-Le informazioni esposte nel catalogo derivano dalla ricognizione dei procedimenti effettuate dagli uffici comunali nel dicembre 2020 (nota 1319949 del 18.11.2020 del Segretario Generale: assegnazione ai dirigenti dell'obiettivo di redigere schede con la descrizione dei procedimenti amministrativi di competenza). Il responsabile del procedimento ha inserito le informazioni nella scheda. Ogni procedimento rimanda alla scheda compilata dal responsabile. Nella scheda è possibile leggere le informazioni generali sul procedimento (metadati) e le fasi di attuazione.
+Le informazioni esposte nel catalogo derivano dalla ricognizione dei pagamenti effettuata attraverso la somministrazione di un form Google ai dirigenti inel dicembre 2015.
+I dati sono stati raccolti per costruire il Piano attivazione dei servizi PagoPA inviato ad AgID.
 
-Il lavoro per la visualizzazione delle informazioni su questa piattaforma è stato realizzato nel gennaio 2021 da **Ciro Spataro** e **Sergio Schimicci** dell'**U.O. Transizione al digitale**, Servizio Innovazione, Settore Servizi Direzione Generale, per permettere una agevole consultazione delle informazioni sulle attività dei procedimenti amministrativi.
+Il lavoro per la visualizzazione delle informazioni su questa piattaforma è stato realizzato da **Ciro Spataro**  dell'**U.O. Transizione al digitale**, Servizio Innovazione, Settore Servizi Direzione Generale.
 
 ## `Catalogo` online 
-Il link al catalogo è [https://uo-transizionedigitalecomunepalermo.github.io/procedimenti-amministrativi-comunepalermo/](https://uo-transizionedigitalecomunepalermo.github.io/procedimenti-amministrativi-comunepalermo/)
+Il link al catalogo è [https://uo-transizionedigitalecomunepalermo.github.io/catalogo-pagamenti/](https://uo-transizionedigitalecomunepalermo.github.io/catalogo-pagamenti)
 
 ### Gli strumenti principali usati per realizzare la visualizzazione del `catalogo` sono quattro:
 - [**Simile Exhibit**](http://www.simile-widgets.org/exhibit3/), per realizzare l'interfaccia di navigazione del catalogo;

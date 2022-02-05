@@ -35,17 +35,11 @@
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
 
-    <!-- Impostazione fino ad agosto 2021, non più funzionante 
-    <link rel="exhibit/data" 
-    type="application/jsonp"
-    href="https://spreadsheets.google.com/feeds/list/1EgbulRESoJhV-5k5LwwBJOopjD4RRtVbiFPfILJML0I/od6/public/basic?alt=json-in-script"
-    ex:converter="googleSpreadsheets" /> 
-    -->
-
+    
     <!-- Impostazione funzionante da fine agosto 2021  -->
     <link rel="exhibit/data" 
     type="text/csv"
-    href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQfrJ2qTTIIkX5Pf0Q4dxijhIA9R3XtocGEvhPsNA3Hd-OnhTgkYEqNJltvVeTdQrsXAsnrDX2_09lK/pub?output=csv" />
+    href="https://docs.google.com/spreadsheets/d/e/2PACX-1vT-xXzmrHytp52rdux1K-z4CVaR8SZDO1LpZZjCXH31AqysduyDetltYVZmfAyg3g_erQCwr8lRqlpI/pub?gid=1274960318&single=true&output=csv" />
 	
 
     <script src="./js/dist/exhibit-api.js?locale=it"></script>
@@ -80,10 +74,10 @@
 					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 						<ul class="nav navbar-nav">
 							<li class="active">
-								<a href="./index.html"><b>Procedimenti amministrativi "Comune di Palermo" (dic.2020)</b></a>
+								<a href="./index.html"><b>Catalogo pagamenti al comune di Palermo</b></a>
 							</li>
 							<li>
-								<a href="https://uo-transizionedigitalecomunepalermo.github.io/procedimenti-amministrativi-palermo-delibera-cc-608-27_10_2011/" target="_blank">Procedimenti amministrativi (2011)</a>
+								<a href="https://uo-transizionedigitalecomunepalermo.github.io/procedimenti-amministrativi-comunepalermo/" target="_blank">Procedimenti amministrativi (2020)</a>
 							</li>  						
 							<!-- <li>
 								<a href="./proponi.html">Proponi</a>
@@ -97,7 +91,7 @@
 						</ul>
 						<ul class="nav navbar-nav navbar-right">
 							<li>
-								<a href="https://github.com/UO-TransizioneDigitaleComunePalermo/procedimenti-amministrativi-comunepalermo" target="_blank">Codice GitHub</a>
+								<a href="https://github.com/UO-TransizioneDigitaleComunePalermo/catalogo-pagamenti" target="_blank">Codice GitHub</a>
 							</li>
 						</ul>
 					</div>
@@ -111,14 +105,12 @@
 
 					
 			<div class="col-md-12 column">
-			<h3>Consultazione delle attività relative ai procedimenti amministrativi comunali</h3></p>
-			Le informazioni esposte nel catalogo derivano dalla ricognizione dei procedimenti effettuate dagli uffici comunali nel dicembre 2020 
-			(nota 1319949 del 18.11.2020 del Segretario Generale: assegnazione ai dirigenti dell'obiettivo di redigere schede con la descrizione dei procedimenti amministrativi 
-			di competenza). 
+			<h3>Catalogo dei pagamenti al comune di Palermo</h3></p>
+			I dati esposti nel catalogo derivano dalla ricognizione dei pagamenti effettuata a dicembre 2015 dagli uffici. 
 			<br>
-			Ogni procedimento rimanda alla scheda compilata dal responsabile. Nella scheda è possibile leggere le informazioni generali sul procedimento (metadati) e le fasi di attuazione.
+			La ricognizione è stata effettuata nel periodo in cui l'Amministrazione ha aderito alla Convezione AGID per pagoPA.
 		        <br> 
-			Il lavoro per la visualizzazione delle informazioni su questa piattaforma è stato realizzato da <code>Ciro Spataro</code> e <code>Sergio Schimicci</code> dell'U.O. Transizione al digitale, Servizio Innovazione, Settore Servizi Direzione Generale.
+			Il lavoro per la visualizzazione delle informazioni su questa piattaforma è stato realizzato da <code>Ciro Spataro</code> dell'U.O. Transizione al digitale, Servizio Innovazione, Settore Servizi Direzione Generale.
 			</p>
 			</div>
 	
@@ -149,22 +141,22 @@
 			<div class="col-md-7 column">
 				<div ex:role="facet" 
 				ex:facetClass="Cloud"
-				ex:expression=".area" 
-				ex:facetLabel="area"
+				ex:expression=".area-gestisce-introito" 
+				ex:facetLabel="area-gestisce-introito"
 				ex:sortMode="count"></div>
 			</div>
 			<div class="col-md-2 column">
 				<div ex:role="facet" 
-				ex:expression=".lavoro_agile" 
-				ex:facetLabel="lavoro agile"
+				ex:expression=".numero-medio-pagamenti-mese" 
+				ex:facetLabel="numero-medio-pagamenti-mese"
 				ex:missingLabel="Non specificato"
 				ex:sortMode="count"></div>
 			
 			</div>
 			<div class="col-md-3 column">
 				<div ex:role="facet" 
-				ex:expression=".servizio" 
-				ex:facetLabel="servizio"
+				ex:expression=".importo-massimo-pagamento" 
+				ex:facetLabel="importo-massimo-pagamento"
 				ex:missingLabel="altro"
 				ex:sortMode="count">
 				</div>
@@ -179,8 +171,8 @@
 					<div ex:role="exhibit-view" 
 					ex:viewClass="Exhibit.TabularView"  
 					ex:label="Table"  
-					ex:columns=".denominazione_procedimento,.area,.servizio,.lavoro_agile,.email_responsabile_procedimento,.telefono_info,.rif"  
-					ex:columnLabels="procedimento, area, servizio, lavoro agile, email, telefono, rif" 
+					ex:columns=".titolo-pagamento,.area-gestisce-introito,.ufficio-responsabile-introito,.scadenza-pagamento,.numero-medio-pagamenti-mese,.importo-minimo-pagamento,.importo-massimo-pagamento"  
+					ex:columnLabels="titolo-pagamento, area-gestisce-introito, ufficio-responsabile-introito, scadenza-pagamento, numero-medio-pagamenti-mese, importo-minimo-pagamento, importo-massimo-pagamento" 
 					ex:columnFormats="list,list,list,list,list,list,list"
 					ex:sortColumn="7"
 					ex:sortAscending="true"
@@ -190,14 +182,14 @@
 							<table class="table">
 								<tr>
 									<!-- <td><strong><span ex:content=".area"></strong></td> -->
-									<td><a ex:href-content=".link_scheda" ex:onclick-subcontent="trackOutboundLink('.link_scheda'); return false;" target="_blank"><strong><span ex:content=".denominazione_procedimento" class="accussì"></strong></span></a></td>
-									<td><span ex:content=".area"></td>
-									<td><span ex:content=".servizio"></span></td>
-									<td><span ex:content=".lavoro_agile"></span></td>
-									<td><span ex:content=".email_responsabile_procedimento"></span></td>
-									<td><span ex:content=".telefono_info"></span></td>
-									<td><span ex:content=".rif"></span></td>
-									<!-- <td><span ex:content=".link_scheda"></span></td> -->
+									<td><a ex:href-content=".titolo-pagamento" ex:onclick-subcontent="trackOutboundLink('.titolo-pagamento'); return false;" target="_blank"><strong><span ex:content=".titolo-pagamento" class="accussì"></strong></span></a></td>
+									<td><span ex:content=".area-gestisce-introito"></td>
+									<td><span ex:content=".ufficio-responsabile-introito"></span></td>
+									<td><span ex:content=".scadenza-pagamento"></span></td>
+									<td><span ex:content=".numero-medio-pagamenti-mese"></span></td>
+									<td><span ex:content=".importo-minimo-pagamento"></span></td>
+									<td><span ex:content=".importo-massimo-pagamento"></span></td>
+									<!-- <td><span ex:content=".titolo-pagamento"></span></td> -->
 								</tr>
 							</table>
 						</div>

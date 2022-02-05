@@ -1,5 +1,4 @@
-# Procedimenti amministrativi del comune di Palermo
+# Catalogo dei pagamenti al comune di Palermo
 
-[**interfaccia facile e interattiva per il cittadino che cerca i procedimenti amministrativi**](https://cirospat.github.io/procedimenti-amministrativi-comunepalermo)
+[**interfaccia facile e interattiva per visualizzare i pagamenti a vario titolo al comune di Palermo**](https://uo-transizionedigitalecomunepalermo.github.io/catalogo-pagamenti)
 
-![](https://raw.githubusercontent.com/cirospat/........./gh-pages/img/interfaccia-servizi-comunali.png)

@@ -36,7 +36,7 @@
     <script type="text/javascript" src="js/scripts.js"></script>
 
     
-    <!-- Impostazione funzionante da fine agosto 2021  -->
+    <!-- Impostazione funzionante da fine agosto 2021 per leggere i dataset di Google sheet in CSV -->
     <link rel="exhibit/data" 
     type="text/csv"
     href="https://docs.google.com/spreadsheets/d/e/2PACX-1vT-xXzmrHytp52rdux1K-z4CVaR8SZDO1LpZZjCXH31AqysduyDetltYVZmfAyg3g_erQCwr8lRqlpI/pub?gid=1274960318&single=true&output=csv" />
@@ -51,10 +51,11 @@
     </script>
 
     <!-- 
-    Go to www.addthis.com/dashboard to customize your tools 
+    Go to www.addthis.com/dashboard to customize your tools (per condividere sui social)
     <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5b4c36adc4260026"></script>	
     -->
 	
+    <!-- generatore di feed RSS su Zapier -->
     <link href="https://zapier.com/engine/rss/43663/p2" rel="alternate" type="application/rss+xml" title="catalogo pagamenti al comune di Palermo" />
 
 </head>
@@ -114,21 +115,14 @@
 			 	
 	        
 		<div class="row clearfix">
-			<!--  
-                        <div class="col-md-1 column">   
-			</div>  
-                        -->
-
 			<div class="col-md-9 column">
 				<button type="button" class="btn btn-danger"><b>Cerca le parole chiave</b></button> <b>↓</b> 
 				<img src="https://img.shields.io/badge/digita-e_ti_fornisco_risposte_immediate-red.svg" /></a>
 			        <div ex:role="facet" ex:facetClass="TextSearch"></div>
 			</div> 
-			
-			<!-- <div class="col-md-1 column">
-			</div>  -->
 		</div>
-		<div class="row clearfix">
+		
+                <div class="row clearfix">
 			<div class="col-md-12 column">
 				<div ex:role="facet" 
 				ex:facetClass="Cloud"
@@ -137,6 +131,7 @@
 				ex:sortAscending="false"
 				ex:sortMode="count"></div>
 			</div>
+			
 			<div class="col-md-3 column">
 				<div ex:role="facet" 
 				ex:expression=".numero-medio-pagamenti-mese" 
@@ -224,11 +219,10 @@
 			
 		<footer>
 			<p>
-				<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Licenza Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a> <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Questo portale creato </span> da <a href="mailto:c.spataro@comune.palermo.it" target="_blank"><b>Ciro Spataro</b></a> è distribuito con Licenza <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribuzione - Condividi allo stesso modo 4.0 Internazionale</a>.
+			<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Licenza Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a> <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Questo portale creato </span> da <a href="mailto:c.spataro@comune.palermo.it" target="_blank"><b>Ciro Spataro</b></a> è distribuito con Licenza <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribuzione - Condividi allo stesso modo 4.0 Internazionale</a>.
 			</p>
 			
-			<h4>Strumenti</h4>
-  			<p>Gli strumenti principali usati per realizzare questa visualizzazione sono quattro:</p>
+			<h4>Gli strumenti principali usati per realizzare questa visualizzazione sono:</h4>
   			<ul>
   			<li><a href="http://www.simile-widgets.org/exhibit3/" target="_blank"><strong>Simile Exhibit</strong></a>, per realizzare l'<strong>interfaccia di navigazione</strong> del catalogo;</li>
   			<li><a href="http://getbootstrap.com" target="_blank"><strong>Twitter Boostrap</strong></a>, per dare un po' di <strong>stile</strong> alle pagine pubblicate;</li>

@@ -137,8 +137,9 @@
 				ex:expression=".numero-medio-pagamenti-mese" 
 				ex:facetLabel="numero medio di pagamenti al mese"
 				ex:missingLabel="Non specificato"
-				ex:sortAscending="false"
-				ex:sortMode="count">    </div>
+				ex:sortDirection="reverse"   <!-- al posto di ex:sortAscending="false" perchè deve ordinare grandezze numeriche e non ordine alfabetico -->
+				ex:sortMode="value">         <!-- al posto di ex:sortMode="count" perchè deve ordinare grandezze numeriche e non ordine alfabetico -->    
+			        </div>
 			
 				</div>
 			<div class="col-md-6 column">
@@ -153,10 +154,10 @@
 			<div class="col-md-3 column">
 				<div ex:role="facet" 
 				ex:expression=".importo-massimo-pagamento" 
-				ex:facetLabel="importo massimo di pagamento"
+				ex:facetLabel="importo massimo di pagamento (€)"
 				ex:missingLabel="altro"
-				ex:sortAscending="false"
-				ex:sortMode="count"> 
+				ex:sortDirection="reverse"   <!-- al posto di ex:sortAscending="false" perchè deve ordinare grandezze numeriche e non ordine alfabetico -->
+				ex:sortMode="value">         <!-- al posto di ex:sortMode="count" perchè deve ordinare grandezze numeriche e non ordine alfabetico -->
 				</div>
 			</div>
 		</div>

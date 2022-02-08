@@ -1,1 +1,244 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+	<meta charset="utf-8">
+	<title>Catalogo dei pagamenti al comune di Palermo</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="pagamenti: catalogo dei pagamenti al comune di Palermo">
+	<meta name="author" content="OpenDataSicilia">
 
+	<!-- <meta property="og:image" content="http://petrusino.opendatasicilia.it/img/share.jpg" />
+	<meta property="og:title" content="Petrusino, ... perché certi siti, apps, mappe, servizi sono un po' come il prezzemolo e non è facili distinguerli ..." />
+	<meta property="og:url" content="http://petrusino.opendatasicilia.it" /> -->
+
+	<!--link rel="stylesheet/less" href="less/bootstrap.less" type="text/css" /-->
+	<!--link rel="stylesheet/less" href="less/responsive.less" type="text/css" /-->
+	<!--script src="js/less-1.3.3.min.js"></script-->
+	<!--append ‘#!watch’ to the browser URL, then refresh the page. -->
+	
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+
+	<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+  	<!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="img/logo_comune_Palermo.png">
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+
+    
+    <!-- Impostazione funzionante da fine agosto 2021 per leggere i dataset di Google sheet in CSV -->
+    <link rel="exhibit/data" 
+    type="text/csv"
+    href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRrShxVf6VZYXPeHR9e3NXsYZ_x8nrE1gGTuhqao4ERRm1XDYuXBO7G4vqDkk4u96BfLRAjekwZPk3K/pub?gid=0&single=true&output=csv" />
+	
+
+    <script src="./js/dist/exhibit-api.js?locale=it"></script>
+
+    <script type="text/javascript">
+    var tableStyler = function(table, database) {
+    	$(table).addClass("table table-condensed table-striped");
+    };
+    </script>
+
+    <!-- 
+    Go to www.addthis.com/dashboard to customize your tools (per condividere sui social)
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5b4c36adc4260026"></script>	
+    -->
+	
+    <!-- generatore di feed RSS su Zapier -->
+    <link href="https://zapier.com/engine/rss/43663/p2" rel="alternate" type="application/rss+xml" title="catalogo pagamenti al comune di Palermo" />
+
+</head>
+
+<body>
+	<div class="container">
+		<div class="row clearfix">
+			<div class="col-md-12 column">
+				<nav class="navbar navbar-default" role="navigation">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button> 
+						<a class="navbar-brand logo" href="./index.html">
+							<img style="max-width:30px; margin-top: 5px;"	src="./img/logo_comune_Palermo.png">
+						</a>
+					</div>
+
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav">
+							<li class="active">  
+								<a href="./index.html"><b>Catalogo dei servizi digitali online del comune di Palermo</b></a>
+							</li> 
+							<li>
+								<a href="https://uo-transizionedigitalecomunepalermo.github.io/catalogo-pagamenti/servizi-domanda-individuale" target="_blank">Servizi a domanda individuale (2021)</a>
+							</li>  						
+							<!-- <li>
+								<a href="./proponi.html">Proponi</a>
+							</li>
+							<li>
+            					<a href="./griglia.html">Griglia</a>
+          					</li>
+							<li>
+								<a href="./open.html">Open</a>
+							</li> -->
+						</ul>
+						<ul class="nav navbar-nav navbar-right">
+							<li>
+								<a href="https://github.com/UO-TransizioneDigitaleComunePalermo/catalogo-pagamenti/tree/gh-pages" target="_blank">Codice GitHub</a>
+							</li>
+						</ul>
+					</div>
+
+				</nav>
+			</div>
+		</div>
+
+							
+		<div class="col-md-12 column">
+		<h3>Catalogo dei servizi digitali online del comune di Palermo</h3></p>
+		I dati esposti nel catalogo derivano dalla ricognizione dei servizi digitali online presenti sul sito istituzionale al  <b>1° semestre 2022</b>. 
+		<br>
+		La ricognizione è stata effettuata per il monitoraggio dell'attuazione del Piano triennale dell'Informatica / Servizi.
+		</p>
+		</div>
+	
+			 	
+	        
+		<div class="row clearfix">
+			<div class="col-md-9 column">
+				<button type="button" class="btn btn-danger"><b>Cerca le parole chiave</b></button> <b>↓</b> 
+				<img src="https://img.shields.io/badge/digita-e_ti_fornisco_risposte_immediate-red.svg" /></a>
+			        <div ex:role="facet" ex:facetClass="TextSearch"></div>
+			</div> 
+		</div>
+		
+                <div class="row clearfix">
+			<div class="col-md-12 column">
+				<div ex:role="facet" 
+				ex:facetClass="Cloud"
+				ex:expression=".tag" 
+				ex:facetLabel="ambito"
+				ex:sortAscending="false"
+				ex:sortMode="count"></div>
+			  </div>
+			
+			<div class="col-md-2 column">
+				<div ex:role="facet" 
+				ex:expression=".app" 
+				ex:facetLabel="app"
+				ex:missingLabel="non specificato"
+				ex:sortAscending="true"
+				ex:sortMode="count">   </div>
+			</div>
+			
+			<div class="col-md-2 column">
+				<div ex:role="facet" 
+				ex:expression=".web-responsive" 
+				ex:facetLabel="web responsive"
+				ex:missingLabel="non specificato"
+				ex:sortAscending="true"
+				ex:sortMode="count">   </div>
+			</div>
+			
+			<div class="col-md-2 column">
+				<div ex:role="facet" 
+				ex:expression=".accesso-SPID-CIE" 
+				ex:facetLabel="accesso SPID CIE"
+				ex:missingLabel="non specificato"
+				ex:sortAscending="true"
+				ex:sortMode="count">   </div>
+			</div>
+			
+			
+			<div class="col-md-4 column">
+				<div ex:role="facet" 
+				ex:expression=".pagamento-pagoPA" 
+				ex:facetLabel="pagamento pagoPA"
+				ex:missingLabel="non specificato"
+				ex:sortAscending="true"
+				ex:sortMode="count">   </div>
+			</div>
+			
+			
+		</div>
+		<div class="row clearfix">
+			<div class="col-md-12 column">
+
+				<div ex:role="viewPanel" style="padding: 0in;">
+					<div ex:role="exhibit-view" 
+					ex:viewClass="Exhibit.TabularView"  
+					ex:label="Table"  
+					ex:columns=".servizio-comunale-online,.piattaforma,.tag,.app,.web-responsive,.accesso-SPID-CIE,.pagamento-pagoPA"  
+					ex:columnLabels="servizio, piattaforma, ambito, app, web-responsive, accesso-SPID-CIE, pagamento-pagoPA" 
+					ex:columnFormats="list,list,list,list,list,list,list"
+					ex:sortColumn="5"
+					ex:sortAscending="true"
+					ex:tableStyler="tableStyler"> 
+					<div ex:role="exhibit-lens">
+						<div class="table-responsive">
+							<table class="table">
+								<tr>
+									
+									<td><strong><span ex:content=".servizio-comunale-online"></strong></span></td>
+									<td><span ex:content=".piattaforma"></td>
+									<td><span ex:content=".tag"></span></td>
+									<td><span ex:content=".app"></span></td>
+									<td><span ex:content=".web-responsive"></span></td>
+									<td><span ex:content=".accesso-SPID-CIE"></span></td>
+									<td><span ex:content=".pagamento-pagoPA"></span></td>
+								
+								</tr>
+							</table>
+						</div>
+
+					</div>
+				</div> 
+
+
+
+
+			</div>
+
+		</div>
+		<hr>
+		<!--
+		<div id="disqus_thread"></div>
+                <script>
+                (function() { // DON'T EDIT BELOW THIS LINE
+                var d = document, s = d.createElement('script');
+                s.src = 'https://transizione-digitale.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+               (d.head || d.body).appendChild(s);
+               })();
+               </script>
+               <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>	
+	       -->
+	       <hr>	
+			
+			
+		<footer>
+			<p>
+			I contenuti di questo portale, creato </span> da <a href="mailto:c.spataro@comune.palermo.it" target="_blank">Ciro Spataro</a>, sono distribuiti con licenza <a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.it" target="_blank">CC BY 4.0 Int. (attribuzione, 4.0 Internazionale)</a>.
+			</p>
+			
+			<h4>Gli strumenti usati per realizzare questa visualizzazione sono:</h4>
+  			<ul>
+  			<li><a href="http://www.simile-widgets.org/exhibit3/" target="_blank"><strong>Simile Exhibit</strong></a>, per realizzare l'<strong>interfaccia di navigazione</strong> del catalogo;</li>
+  			<li><a href="http://getbootstrap.com" target="_blank"><strong>Twitter Boostrap</strong></a>, per dare un po' di <strong>stile</strong> alle pagine pubblicate;</li>
+   			<li><a href="https://www.google.com/sheets/about/" target="_blank"><strong>GDrive Sheet</strong></a>, per <strong>raccogliere</strong> e <strong>distribuire</strong> i <strong>dati</strong> che fanno da sorgente;</li>
+   			<li><a href="https://pages.github.com" target="_blank"><strong>GitHub Pages</strong></a>, per l'<strong>hosting</strong> dei file che costituiscono questa visualizzazione.</li>
+ 			</ul>
+			
+		</footer>
+
+	</div>
+</body>
+</html>
